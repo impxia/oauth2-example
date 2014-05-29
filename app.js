@@ -83,7 +83,7 @@ app.post('/oauth/authorise', function(req, res, next) {
 }));
 
 app.get('/secret', middleware.requiresUser, function(req, res) {
-  res.send('Secret area');
+  res.send('Secret area:' + JSON.stringify(req.user));
 });
 
 app.use(app.oauth.errorHandler());
