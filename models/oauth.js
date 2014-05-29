@@ -14,3 +14,4 @@ module.exports.getRefreshToken = RefreshToken.getRefreshToken;
 module.exports.getUser = User.getUser;
 module.exports.getClient = Client.getClient;
 module.exports.grantTypeAllowed = Client.grantTypeAllowed;
+module.exports.getUserFromClient = Client.getUserFromClient;

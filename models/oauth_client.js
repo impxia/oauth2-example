@@ -24,6 +24,10 @@ OAuthClientsSchema.static('grantTypeAllowed', function(clientId, grantType, call
   callback(false, true);
 });
 
+OAuthClientsSchema.static('getUserFromClient',function (clientId, clientSecret, callback) {
+  callback(false, authorizedClientIds.indexOf(clientId) >= 0);
+});
+
 mongoose.model('oauth_clients', OAuthClientsSchema);
 var OAuthClientsModel = mongoose.model('oauth_clients');
 module.exports = OAuthClientsModel;

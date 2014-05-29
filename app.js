@@ -27,7 +27,7 @@ app.use(express.methodOverride());
 
 app.oauth = oauthserver({
   model: models.oauth,
-  grants: ['password', 'authorization_code', 'refresh_token'],
+  grants: ['password', 'authorization_code', 'refresh_token', 'client_credentials'],
   debug: true
 });
 
