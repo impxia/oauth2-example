@@ -1,6 +1,6 @@
 # OAuth2 Server Example
 
-This is a small example that uses [node-oauth2-server](https://github.com/thomseddon/node-oauth2-server/) and Mongoose.
+This is a fork of [oauth2-example](https://github.com/mekentosj/oauth2-example) which adds two legged auth example.
 
 ## Installation
 
