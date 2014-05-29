@@ -10,4 +10,6 @@ You can run `node seed.js` to create a user account.  Run `npm start`, then go t
 
 ## Test
 
+Make sure MongoDB is up and running then run test by
+
 `npm test`
